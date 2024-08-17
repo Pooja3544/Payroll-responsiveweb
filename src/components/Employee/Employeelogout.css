@@ -1,0 +1,124 @@
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    margin-right: 500px;
+    /* Set background color to white */
+}
+
+.logout-content {
+    background: linear-gradient(45deg, #8db3d1, #47229e);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px; 
+    width: 100%; 
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 24px; /* Ensure readability */
+}
+
+.button-container {
+    margin-right: 25%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.confirm-button, .back-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 45%; /* Use percentage width for better responsiveness */
+}
+.hgj{
+    margin-left: 30%;
+}
+
+.confirm-button {
+    width: 40%; /* Set width to 40% */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.bck-button {
+    width: 40%; /* Set width to 40% */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.confirm-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+.link-button {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logout-success {
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
+}
+@media (max-width: 768px) { /* Tablet and below */
+    .logout-content {
+        padding: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem;
+    }
+    
+    .confirm-button, .bck-button {
+        width: 100%; /* Full width buttons */
+    }
+}
+
+@media (max-width: 480px) { /* Phone and below */
+    .logout-content {
+        padding: 1rem;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    .confirm-button, .bck-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

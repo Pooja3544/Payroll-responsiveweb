@@ -1,0 +1,145 @@
+/* MyProfile.css *//* Container */.profile-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f4f5f7; /* Light gray background typical in admin panels */margin: auto;
+  width: 70%;
+  height: 60vh;
+  overflow-y: auto;
+  margin-top: 5%;
+  border: 1px solid #dcdcdc; /* Soft border color */border-radius: 0;
+  box-shadow: 02px5pxrgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Max width for larger screens */
+}
+
+/* Profile Section */.profile-section {
+  margin-bottom: 20px;
+  background-color: #ffffff; /* White background for profile sections */padding: 20px;
+  border-radius: 8px;
+  box-shadow: 02px4pxrgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.profile-sectionh2 {
+  text-align: center;
+  color: #333333; /* Dark gray text */margin-bottom: 20px;
+  font-size: 24px;
+  border-bottom: 2px solid #007bff; /* Blue underline for section headers */padding-bottom: 10px;
+}
+
+/* Form */.info-item {
+  margin-bottom: 15px;
+}
+
+.info-itemlabel {
+  display: block;
+  margin-bottom: 5px;
+  color: #333333; /* Dark gray label text */
+}
+
+.info-iteminput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dcdcdc; /* Soft border color */border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px; /* Consistent with admin profile forms */background-color: #ffffff; /* White background for input fields */color: #333333; /* Dark gray text */
+}
+
+.info-iteminput:focus {
+  border-color: #007bff; /* Blue focus color */outline: none;
+}
+
+/* Info Display */.info-display {
+  padding: 10px;
+  background-color: #ffffff; /* White background */border-radius: 0;
+  box-shadow: 01px3pxrgba(0, 0, 0, 0.1);
+}
+
+.info-displayp {
+  margin: 10px0;
+  color: #333333; /* Dark gray text */
+}
+
+.info-displaypstrong {
+  color: #333333; /* Dark gray bold text */
+}
+
+/* Buttons */.save-button, .edit-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.save-button {
+  background-color: #007bff; /* Blue button */
+}
+
+.edit-button {
+  background-color: #6c757d; /* Gray button */
+}
+
+.save-button:hover, .edit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */transform: scale(1.05);
+}
+
+/* Responsive Design *//* Tablets */@media (min-width: 768px) {
+  .profile-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-container {
+    width: 50%;
+  }
+}
+
+/* Responsive design for tablet and mobile screens */@media (max-width: 768px) {
+  .profile-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .save-button, .edit-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .info-iteminput {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .profile-sectionh2 {
+    font-size: 18px;
+  }
+
+  .save-button, .edit-button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .info-iteminput {
+    padding: 6px;
+    font-size: 12px;
+  }
+}
+
+/* Touch event styles */@media (hover: none) {
+  .save-button:hover, .edit-button:hover {
+    background-color: #007bff;
+    transform: none;
+  }
+}

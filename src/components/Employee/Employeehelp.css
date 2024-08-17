@@ -1,0 +1,87 @@
+.employee-help-menu {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, #8db3d1, #47229e);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    max-height: 80vh;
+    text-align: center;
+}
+
+.employee-help-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* Ensures the title is white */
+}
+
+.employee-help-contact-info {
+    margin-top: 10px;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    animation: slideIn 0.5s ease-in-out;
+    color: #333; /* Sets the text color for the contact info */
+}
+
+.employee-help-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.employee-help-list-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333; /* Ensures the text color is dark and readable */
+}
+
+.employee-help-back-button {
+    margin-left: 40%;
+    width: 20%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.employee-help-back-button:hover {
+    background: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .employee-help-menu {
+        padding: 15px;
+    }
+
+    .employee-help-list-item {
+        font-size: 14px;
+    }
+
+    .employee-help-back-button {
+        width: 100%;
+        text-align: center;
+    }
+}

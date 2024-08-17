@@ -1,0 +1,167 @@
+.hg1 {
+  font-size: 30px;
+  color: #f5eded;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.status-page1 {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0010pxrgba(0, 0, 0, 0.89);
+  text-align: center;
+  border-radius: 10px;
+  color: #f5eded;
+}
+
+.cols {
+  color: #ccc;
+  margin-right: 0;
+}
+
+.employee-details {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.progress-step {
+  position: relative;
+  margin: 010px;
+  padding: 10px;
+  text-align: center;
+}
+
+.progress-step.circle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.progress-step.completed.circle {
+  background-color: green;
+}
+
+.progress-step.pending.circle {
+  background-color: yellow;
+}
+
+.arrow-mark {
+  margin-right: 10px;
+  width: 60px;
+  height: 2px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.arrow-mark::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent #ccc;
+}
+
+.back1-button {
+  margin-top: 20px;
+  padding: 10px20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.back1-button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive adjustments *//* Tablets */@media (max-width: 1024px) {
+  .hg1 {
+    font-size: 26px;
+  }
+
+  .status-page1 {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .progress-step.circle {
+    width: 18px;
+    height: 18px;
+  }
+
+  .arrow-mark {
+    width: 50px;
+  }
+
+  .back1-button {
+    padding: 8px18px;
+    font-size: 14px;
+  }
+}
+
+/* Phones */@media (max-width: 768px) {
+  .hg1 {
+    font-size: 22px;
+  }
+
+  .status-page1 {
+    padding: 10px;
+    width: 95%;
+  }
+
+  .progress-step.circle {
+    width: 16px;
+    height: 16px;
+  }
+
+  .arrow-mark {
+    width: 40px;
+  }
+
+  .back1-button {
+    padding: 6px16px;
+    font-size: 14px;
+  }
+}
+
+/* Small Phones */@media (max-width: 480px) {
+  .hg1 {
+    font-size: 18px;
+  }
+
+  .status-page1 {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .progress-step.circle {
+    width: 14px;
+    height: 14px;
+  }
+
+  .arrow-mark {
+    width: 30px;
+  }
+
+  .back1-button {
+    padding: 5px12px;
+    font-size: 12px;
+  }
+}
